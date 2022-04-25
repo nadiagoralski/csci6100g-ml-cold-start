@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+    <link rel=StyleSheet href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" type="text/css">
+
+    <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+
+    <title>Survey</title>
+
+</head>
+
+<body>
+    <div class='container'>
+        <div class="content">
+            <h2>Survey</h2>
+            <div id='surveyWrapper'>
+                <form id="survey" name="survey" action="/survey" method="post">
+                    <div class="field">
+                        <label class="is-size-5">1) Choose the description which best fits your experience with
+                            programming</label>
+
+                        <div class="control">
+                            <label class="radio" for="experience0">
+                                <input type="radio" id="experience0" name="experience" value="0" checked="checked" />
+                                Beginner (i.e. never programmed before, learning fundamentals and/or syntax)
+                            </label>
+                        </div>
+
+                        <div class="control">
+                            <label class="radio" for="experience1">
+                                <input type="radio" id="experience1" name="experience" value="1" />
+                                Minimal experience (i.e. small understanding of syntax and fundamental concepts)
+                            </label>
+                        </div>
+
+                        <div class="control">
+                            <label class="radio" for="experience2">
+                                <input type="radio" id="experience2" name="experience" value="2" />
+                                Experienced (i.e. comfortable writing small programs based on directions given)
+                            </label>
+                        </div>
+
+                        <div class="control">
+                            <label class="radio" for="experience3">
+                                <input type="radio" id="experience3" name="experience" value="3" />
+                                Advanced (i.e. comfortable writing larger scaled programs from scratch)
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="is-size-5">2) Are you familiar with block-based programming languages? (i.e.
+                            Scratch, Blockly)</label>
+
+                        <div class="control">
+                            <label class="radio" for="block_fam_yes">
+                                <input id="block_fam_yes" type="radio" name="block_fam" value="1" />
+                                Yes
+                            </label>
+                        </div>
+                        <div class="control">
+                            <label class="radio" for="block_fam_no">
+                                <input id="block_fam_no" type="radio" name="block_fam" value="0" checked="checked"/>
+                                No
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="field">
+                        <label class="is-size-5">3) If you are using this as part of a class, please enter the course
+                            code below</label>
+
+                        <div class="control">
+                            <label class="radio" for="courseCode">
+                                <input type="text" id="courseCode" name="course_code" value="" maxlength="10" />
+                            </label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="field">
+                        <div class="control">
+                            <input class="button is-primary" type="submit" value="Submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

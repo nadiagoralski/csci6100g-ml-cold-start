@@ -1,0 +1,22 @@
+[
+    {
+        "difficulty": 0,
+        "blockSize": 2,
+        "distractorCount": 0
+    },
+    {
+        "difficulty": 1,
+        "blockSize": 2,
+        "distractorCount": 1
+    },
+    {
+        "difficulty": 2,
+        "blockSize": 1,
+        "distractorCount": 2
+    },
+    {
+        "difficulty": 3,
+        "blockSize": 1,
+        "distractorCount": 4
+    }
+]

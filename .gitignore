@@ -1,0 +1,9 @@
+# Directories
+**/.idea
+**/code
+**/node_modules
+
+#
+
+#Files
+package-lock.json

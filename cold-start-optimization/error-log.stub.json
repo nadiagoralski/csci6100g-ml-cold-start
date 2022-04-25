@@ -1,0 +1,120 @@
+[
+  {
+    "time": "2022-04-13T18:35:15.528Z",
+    "output": "-",
+    "type": "init",
+    "input": "3_0-0_0-2_0-5_0-1_0-4_0",
+    "bindings": [
+      {
+        "code": "def getAvgDoubleHighest(nums):\n\tif len(nums) == 0:\n",
+        "distractor": false
+      },
+      {
+        "code": "\t\treturn 0\n\tsum = 0\n",
+        "distractor": false
+      },
+      {
+        "code": "\tmax = nums[0]\n\tfor index in len(nums):\n",
+        "distractor": false
+      },
+      {
+        "code": "\t\tvalue = nums[index]\n\t\tsum = sum + value\n",
+        "distractor": false
+      },
+      {
+        "code": "\t\tif value &gt; max:\n\t\t\tmax = value\n",
+        "distractor": false
+      },
+      {
+        "code": "\tsum = sum + max\n\treturn sum / (len(nums) + 1)",
+        "distractor": false
+      }
+    ]
+  },
+  {
+    "time": "2022-04-13T18:46:56.022Z",
+    "output": "0_0",
+    "type": "addOutput",
+    "input": "3_0-2_0-5_0-1_0-4_0",
+    "target": "0"
+  },
+  {
+    "time": "2022-04-13T18:46:57.875Z",
+    "output": "0_0-3_0",
+    "type": "addOutput",
+    "input": "2_0-5_0-1_0-4_0",
+    "target": "3"
+  },
+  {
+    "time": "2022-04-13T18:46:58.809Z",
+    "output": "0_0-3_0",
+    "type": "moveOutput",
+    "input": "2_0-5_0-1_0-4_0",
+    "target": "3"
+  },
+  {
+    "time": "2022-04-13T18:46:59.711Z",
+    "output": "0_0-3_0",
+    "type": "moveOutput",
+    "input": "2_0-5_0-1_0-4_0",
+    "target": "3"
+  },
+  {
+    "time": "2022-04-13T18:48:10.225Z",
+    "output": "0_0-1_0-3_0",
+    "type": "addOutput",
+    "input": "2_0-5_0-4_0",
+    "target": "1"
+  },
+  {
+    "time": "2022-04-13T18:48:12.446Z",
+    "output": "0_0-1_0-2_0-3_0",
+    "type": "addOutput",
+    "input": "5_0-4_0",
+    "target": "2"
+  },
+  {
+    "time": "2022-04-13T18:48:14.591Z",
+    "output": "0_0-1_0-2_0-3_0-5_0",
+    "type": "addOutput",
+    "input": "4_0",
+    "target": "5"
+  },
+  {
+    "time": "2022-04-13T18:48:17.860Z",
+    "output": "0_0-1_0-2_0-4_0-3_0-5_0",
+    "type": "addOutput",
+    "input": "-",
+    "target": "4"
+  },
+  {
+    "time": "2022-04-13T18:48:21.796Z",
+    "output": "0_0-1_0-2_0-4_0-3_0-5_0",
+    "type": "feedback",
+    "input": "-",
+    "errors": [
+      {
+        "type": "incorrectPosition",
+        "lines": [
+          4
+        ]
+      }
+    ],
+    "success": false
+  },
+  {
+    "time": "2022-04-13T18:48:29.618Z",
+    "output": "0_0-1_0-2_0-3_0-4_0-5_0",
+    "type": "moveOutput",
+    "input": "-",
+    "target": "3"
+  },
+  {
+    "time": "2022-04-13T18:48:31.697Z",
+    "output": "0_0-1_0-2_0-3_0-4_0-5_0",
+    "type": "feedback",
+    "input": "-",
+    "errors": [],
+    "success": true
+  }
+]
